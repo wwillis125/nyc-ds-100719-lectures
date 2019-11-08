@@ -1,0 +1,7 @@
+import numpy as np
+import pandas as pd
+np.random.seed(0)
+df = pd.DataFrame({'state': ['CA', 'WA', 'CO', 'AZ'] * 3,
+                   'office_id': list(range(1, 7)) * 2,
+                   'sales': [np.random.randint(100000, 999999)
+                             for _ in range(12)]})
